@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <h1>Random Password Generator</h1>
+    <input type="radio" id="lowerCaseOnly">
+    <label for="lowerCaseOnly">Generate Only Lowercase</label><br>
+    <input type="radio" id="upperCaseOnly">
+    <label for="upperCaseOnly">Generate Only Uppercase</label><br>
+    <input type="radio" id="numberOnly">
+    <label for="numberOnly">Generate Only Numbers</label><br>
+    <input type="radio" id="symbols">
+    <label for="symbols">Generate Only Symbols</label><br>
+    <input type="radio" id="lowerNdUpperCase">
+    <label for="lowerNdUpperCase">Generate Lowercase and Uppercase</label><br>
+    <input type="radio" id="AlphaNumeric">
+    <label for="AlphaNumeric">Generate Alphabets and Numbers</label><br>
+    <input type="radio" id="symAlphaNumeric">
+    <label for="symAlphaNumeric">Generate all</label><br>
+
+    <button onclick="passGenerator()">Generate</button>
+    <p id="result"></p>
+</body>
+</html>
