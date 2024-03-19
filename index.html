@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Random Password Generator</h1>
-    <input type="radio" id="lowerCaseOnly">
+    <input type="radio" id="lowerCaseOnly" name="password">
     <label for="lowerCaseOnly">Generate Only Lowercase</label><br>
-    <input type="radio" id="upperCaseOnly">
+    <input type="radio" id="upperCaseOnly" name="password">
     <label for="upperCaseOnly">Generate Only Uppercase</label><br>
-    <input type="radio" id="numberOnly">
+    <input type="radio" id="numberOnly" name="password">
     <label for="numberOnly">Generate Only Numbers</label><br>
-    <input type="radio" id="symbols">
-    <label for="symbols">Generate Only Symbols</label><br>
-    <input type="radio" id="lowerNdUpperCase">
+    <input type="radio" id="symbolOnly" name="password">
+    <label for="symbolOnly">Generate Only Symbols</label><br>
+    <input type="radio" id="lowerNdUpperCase" name="password">
     <label for="lowerNdUpperCase">Generate Lowercase and Uppercase</label><br>
-    <input type="radio" id="AlphaNumeric">
+    <input type="radio" id="AlphaNumeric" name="password">
     <label for="AlphaNumeric">Generate Alphabets and Numbers</label><br>
-    <input type="radio" id="symAlphaNumeric">
+    <input type="radio" id="symAlphaNumeric" name="password">
     <label for="symAlphaNumeric">Generate all</label><br>
 
     <button onclick="passGenerator()">Generate</button>
     <p id="result"></p>
+
+    <script src="index.js"></script>
 </body>
 </html>
